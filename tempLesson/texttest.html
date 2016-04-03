@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="jQuery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+    	var inputField = $('#input');
+      var text = $(".text");
+      console.log (text.length);
+    })
+    </script>
+
+  </head>
+
+  <body>
+    <h1 id='header'>Hello {{yourName}}!</h1>
+    <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam maxime hic qui iure? Nemo velit, reiciendis doloremque animi ducimus numquam assumenda, nostrum voluptatibus, delectus officia ea quod dolorum provident. Fugit aut laboriosam voluptates molestias quibusdam, reprehenderit neque. Praesentium sint, eaque consectetur soluta quas doloribus voluptate a ea non corrupti temporibus similique, provident perferendis facere quia dolore? Saepe doloribus consequatur, excepturi laudantium alias, beatae quaerat temporibus molestias dolorem possimus reiciendis nostrum.</p>
+    <input id='input' type='text' placeholder="Search">
+  </body>
+
+</html>

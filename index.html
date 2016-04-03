@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Pokedex</title>
+	<link rel="stylesheet" href="libs/bootstrap.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/abilityButtons.css">
+	<link rel="stylesheet" href="css/media.css">
+
+
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="container">				
+				<div class="header-wrapper">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3">
+							<div class="header">
+								<h1>Pokedex</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-7 col-sm-7 poke-main">
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="poke-box">
+							<span><img src="bulbazar.png" alt="bulbazar"></span>
+							<h3>Bulbazar</h3>
+							<div class="button-box">
+								<input type="button" value='Grass'>
+								<input type="button" value='Poison'>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="poke-box">
+							<span><img src="bulbazar.png" alt="bulbazar"></span>
+							<h3>Chermander</h3>
+							<div class="button-box">
+								<input type="button" value='Fire'>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="poke-box">
+							<span><img src="bulbazar.png" alt="bulbazar"></span>
+							<h3>Pikachu</h3>
+							<div class="button-box">
+								<input type="button" value='Electric'>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="footer-button">
+					<input type="button" value='Load More' class='more-btn' id='more-btn'>
+				</div>
+			</div>
+			<div class="col-xs-5 col-sm-4 col-sm-offset-1 poke-sidebar">
+				<div class="sidebar-wrapper">
+					<span><img src="bulbazar1.png" alt="" height="120" width="120"></span>
+					<div class="sidebar-title"><h2 id= 'pokeName'>Charmander #004</h2></div>
+					<table>
+						<tr><td>Type</td><td  id='type'>Fire</td></tr>
+						<tr><td>Attack</td><td id='attack'>52</td></tr>
+						<tr><td>Defense</td><td id='defense'>43</td></tr>
+						<tr><td>HP</td><td id='hp'>39</td></tr>
+						<tr><td>SP Attack</td><td id='spAttack'>60</td></tr>
+						<tr><td>SP Defense</td><td id='spDefense'>50</td></tr>
+						<tr><td>Speed</td><td id='speed'>65</td></tr>
+						<tr><td>Weight</td><td id='weight'>85</td></tr>
+						<tr><td>Total moves</td><td id='tMoves'>89</td></tr>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	</div>
+		
+
+
+	<script src	='libs/jQuery.js'></script>
+	
+	<script src ='js/js.js'></script>
+</body>
+</html>
+

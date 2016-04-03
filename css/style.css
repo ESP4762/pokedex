@@ -1,0 +1,91 @@
+.row:before,
+.row:after {
+	content: " ";
+    display: table;
+}
+.row:after{
+	clear:both;
+}
+.container{
+	min-width: 645px;
+}
+
+/*--------------------*/
+.header {
+margin: 10px 0 20px 0;
+border: 1px solid;
+text-align: center;
+}
+.header h1 {
+	margin: 0;
+}
+
+/*---------------------*/
+
+.poke-main {
+	max-height: 600px; 
+	overflow-y: scroll;
+}
+
+.poke-box {
+	text-align: center;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	min-width: 115px;
+	min-height: 199.4px;
+	/*костыль*/
+}
+img{
+	border: 1px solid #B3B3B3;
+}
+.poke-box img{
+	border: 1px solid #B3B3B3;
+	margin-top: 10px;
+}
+.poke-box h3 {
+	margin: 5px 0 0 0;
+}
+.poke-box .button-box {
+	display: inline-block;
+	text-align: left;
+	min-width: 60%;
+	margin: 0 auto 15px auto;
+}
+.button-box input[type="button"]{
+	background-color: #E97976;
+	border-radius: 4px;
+/*	border: 1px solid #CB5B58;*/
+	width: 55px;
+	text-shadow: 1px 1px 1px black;
+	color: #fff;
+}
+.footer-button .more-btn {
+	width:100%;
+	border-radius: 4px;
+	border: 1px solid #3C5AC6;
+	background-color: #198FFB;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 5px 0;
+	margin-bottom: 5px;
+}
+
+
+/*------------SIDEBAR-----------------*/
+
+.sidebar-wrapper {
+	margin-top: 196px;
+	padding: 10px;
+	border: 1px solid;
+	text-align: center;
+}
+.sidebar-title h2 {
+	margin: 5px 0;
+}
+table {
+	width: 100%;
+}
+td {
+	border: 1px solid #A0A0A0;
+}
