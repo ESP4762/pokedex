@@ -2,6 +2,7 @@ var apiUrl = "http://pokeapi.co/api/v1/";
 var baseApiUrl = "http://pokeapi.co";
 var pokemons = [];
 var loadedPoks = 0;
+var typesFilter = '';
 
 $(function(){
 	$('#more-btn').click(function (){
@@ -16,8 +17,28 @@ $(function(){
 		$(this).addClass('active');
 	});
 
+//$(".poke-box.bug_type")
 
+	$(".poke-main").on("click", ".button-box input", function () {
+		var type = $(this).data("type");
+		typesFilter = (type === typesFilter) ? "" : type; // тернарный оператор почитать ? :
+		checkFilter();
+		return false; // экран всплытия события
+	}) 
 })	
+
+function checkFilter () {
+	$(".button-box input").removeClass("active");
+	if(typesFilter === "") {
+		$(".poke-main .col-xs-4").show();
+	} else {
+
+		$(".poke-main .col-xs-4").hide();
+		$(".poke-box."+typesFilter+"_type").closest(".col-xs-4").show();
+		$(".button-box input."+typesFilter).addClass("active");
+	}
+}
+
 function fillSidebar(pokemon) {
 	$('#type').text(typesToString(pokemon.types, "", ", "));
 
@@ -44,7 +65,7 @@ function fillSidebar(pokemon) {
 
 //  typesToString(types, "", ", "); => bug, fire;
 //  typesToString(types, "_type", " ") => bug_type fire_type
-// test
+// 
 
 function typesToString (types, postfix, separator) {
 	var result = '';
@@ -79,10 +100,11 @@ function addPokemon(pokemon){
 	htmlPoc += 	"<h3>" + pokemon.name +"</h3>";
 	htmlPoc +=	"<div class=\"button-box\">";
 	for (var i = 0; i < pokemon.types.length; i++){
-		htmlPoc += "<input class=\""+pokemon.types[i].name +"\" type=\"button\" value=\""+ pokemon.types[i].name +"\"> "
+		htmlPoc += "<input class=\""+pokemon.types[i].name +"\" type=\"button\" value=\""+ pokemon.types[i].name +"\" data-type=\"" + pokemon.types[i].name + "\"> "
 	}
 	htmlPoc +=	"</div></div></div> ";
 	$(".poke-main .row").append(htmlPoc);
+	checkFilter();
 	getPocSprite(pokemon.national_id, pokemon.sprites[0].resource_uri);
 }
 

@@ -58,7 +58,9 @@ img{
 	width: 55px;
 	text-shadow: 1px 1px 1px black;
 	color: #fff;
+	text-transform: capitalize;
 }
+
 .footer-button .more-btn {
 	width:100%;
 	border-radius: 4px;
@@ -88,4 +90,7 @@ table {
 }
 td {
 	border: 1px solid #A0A0A0;
+}
+td#type {
+	text-transform: capitalize;
 }
