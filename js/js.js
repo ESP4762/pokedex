@@ -44,6 +44,7 @@ function fillSidebar(pokemon) {
 
 //  typesToString(types, "", ", "); => bug, fire;
 //  typesToString(types, "_type", " ") => bug_type fire_type
+// test
 
 function typesToString (types, postfix, separator) {
 	var result = '';
