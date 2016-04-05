@@ -5,6 +5,7 @@ var loadedPoks = 0;
 var typesFilter = '';
 
 $(function(){
+	getPokemon(loadedPoks, 12);
 	$('#more-btn').click(function (){
 		getPokemon(loadedPoks, 12);
 		$(this).prop("disabled", true);
@@ -12,7 +13,12 @@ $(function(){
 
 	$(".poke-main").on("click", '.poke-box', function() {
 		var id = $(this).data("id");
+		var sidebarToggle = $(".poke-sidebar")
 		fillSidebar(pokemons[id]);
+		sidebarToggle.fadeIn();
+		// if ($(this).hasClass("active")) {
+		// 	sidebarToggle.fadeOut();
+		// }
 		$('.poke-box').removeClass('active');
 		$(this).addClass('active');
 	});
@@ -59,7 +65,6 @@ function fillSidebar(pokemon) {
 	$('#weight').text(pokemon.weight);
 
 	$('#tMoves').text(pokemon.moves.length);
-
 	setSidebarImg(pokemon.national_id);
 }
 

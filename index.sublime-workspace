@@ -3,6 +3,66 @@
 	{
 		"selected_items":
 		[
+			[
+				"ty",
+				"typesFilter"
+			],
+			[
+				"t",
+				"typesFilter"
+			],
+			[
+				"typ",
+				"typesFilter"
+			],
+			[
+				"tye",
+				"typesFilter"
+			],
+			[
+				"n",
+				"national_id"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"lo",
+				"loadedPoks"
+			],
+			[
+				"ge",
+				"getPocSprite"
+			],
+			[
+				"ht",
+				"htmlPoc"
+			],
+			[
+				"po",
+				"pokemon"
+			],
+			[
+				"p",
+				"pokemon"
+			],
+			[
+				"get",
+				"getPokemon"
+			],
+			[
+				"ap",
+				"apiUrl"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"inl",
+				"inline-block"
+			]
 		]
 	},
 	"buffers":
@@ -49,10 +109,16 @@
 	},
 	"file_history":
 	[
+		"/Users/ESP/Google Диск/Pokedex/tempLesson/texttest.html",
+		"/Users/ESP/Google Диск/Pokedex/js/js.js",
+		"/Users/ESP/Google Диск/Pokedex/css/style.css",
+		"/Users/ESP/Google Диск/Pokedex/libs/jQuery.js",
+		"/Users/ESP/Google Диск/Pokedex/libs/bootstrap.css",
+		"/Users/ESP/Downloads/intersections/solution.js"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -66,6 +132,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bottom",
+			"border",
+			"96",
+			"\\",
+			"120",
+			"</td>",
+			"pokemons",
+			"td",
+			"box-s",
+			".header h1 {\n	margin: 0;\n}"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -90,11 +166,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -127,7 +203,7 @@
 	"project": "index.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
