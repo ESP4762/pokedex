@@ -5,6 +5,8 @@ var loadedPoks = 0;
 var typesFilter = '';
 
 $(function(){
+	$('#more-btn').prop("disabled", true);
+	getPokemon(loadedPoks, 12);
 	$('#more-btn').click(function (){
 		getPokemon(loadedPoks, 12);
 		$(this).prop("disabled", true);
@@ -12,18 +14,24 @@ $(function(){
 
 	$(".poke-main").on("click", '.poke-box', function() {
 		var id = $(this).data("id");
+		var sidebarToggle = $(".poke-sidebar")
 		fillSidebar(pokemons[id]);
-		$('.poke-box').removeClass('active');
-		$(this).addClass('active');
+		if ($(this).hasClass("active")) {
+			sidebarToggle.fadeOut();
+			$(this).removeClass('active');
+		} else {
+			sidebarToggle.fadeIn();
+			$('.poke-box').removeClass('active');
+			$(this).addClass('active');
+		}
 	});
 
-//$(".poke-box.bug_type")
 
 	$(".poke-main").on("click", ".button-box input", function () {
 		var type = $(this).data("type");
-		typesFilter = (type === typesFilter) ? "" : type; // тернарный оператор почитать ? :
+		typesFilter = (type === typesFilter) ? "" : type; 
 		checkFilter();
-		return false; // экран всплытия события
+		return false; 
 	}) 
 })	
 
@@ -59,13 +67,9 @@ function fillSidebar(pokemon) {
 	$('#weight').text(pokemon.weight);
 
 	$('#tMoves').text(pokemon.moves.length);
-
 	setSidebarImg(pokemon.national_id);
 }
 
-//  typesToString(types, "", ", "); => bug, fire;
-//  typesToString(types, "_type", " ") => bug_type fire_type
-// 
 
 function typesToString (types, postfix, separator) {
 	var result = '';
@@ -96,7 +100,7 @@ function getPokemon(from, count){
 function addPokemon(pokemon){
 	console.log(pokemon);
 	var htmlPoc = "<div class=\"col-xs-4\"><div class=\"poke-box " + typesToString (pokemon.types, "_type", " ") + "\" data-id=\"" + pokemon.national_id+"\"> ";
-	htmlPoc += "<span><img src=\"bulbazar.png\" alt=\"bulbazar\" height=\"96\" width=\"96\"></span>";
+	htmlPoc += "<center><img src=\"img/blank.png\" alt=\"blank\" height=\"96\" width=\"96\"></center>";
 	htmlPoc += 	"<h3>" + pokemon.name +"</h3>";
 	htmlPoc +=	"<div class=\"button-box\">";
 	for (var i = 0; i < pokemon.types.length; i++){

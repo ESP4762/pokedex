@@ -49,7 +49,8 @@ img{
 	display: inline-block;
 	text-align: left;
 	min-width: 60%;
-	margin: 0 auto 15px auto;
+	margin: 0 auto 0 auto;
+	padding: 0 2px 0 3px;
 }
 .button-box input[type="button"]{
 	background-color: #E97976;
@@ -59,6 +60,7 @@ img{
 	text-shadow: 1px 1px 1px black;
 	color: #fff;
 	text-transform: capitalize;
+	margin-bottom: 4px;
 }
 
 .footer-button .more-btn {
@@ -75,6 +77,10 @@ img{
 
 
 /*------------SIDEBAR-----------------*/
+
+.poke-sidebar {
+	display: none;
+}
 
 .sidebar-wrapper {
 	margin-top: 196px;
