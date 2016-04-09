@@ -68,24 +68,26 @@
 	"buffers":
 	[
 		{
-			"contents": "<div ng-click=\"pokCont.selectPok(pokemon)\" class=\"poke-box\">\n    <span><img ng-src=\"{{pokemon.image}}\" alt=\"{{pokemon.name}}\" height=\"96\" width=\"96\"></span>\n    <h3>{{pokemon.name}}</h3>\n    <div class=\"button-box\">\n        <input ng-repeat=\"type in pokemon.types\"\n               ng-click=\"pokCont.setFilter(type.name);$event.stopPropagation();\"\n               ng-class=\"[type.name, {active: type.name===filter}]\"\n               type=\"button\" value='{{type.name}}'>\n    </div>\n</div>\n",
-			"file": "template/poke-box.html",
-			"file_size": 484,
-			"file_write_time": 131043539360000000,
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 484,
+				"buffer_size": 2696,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<div class=\"sidebar-wrapper\" ng-show=\"selected !== null\">\n    <span><img ng-src=\"{{selected.image}}\" alt=\"\" height=\"120\" width=\"120\"></span>\n    <div class=\"sidebar-title\"><h2>{{selected.name + \" #\" + selected.national_id}}</h2></div>\n    <table>\n        <tr><td>Type</td><td>{{pokCont.typesToString(selected.types)}}</td></tr>\n        <tr><td>Attack</td><td>{{selected.attack}}</td></tr>\n        <tr><td>Defense</td><td>{{selected.defense}}</td></tr>\n        <tr><td>HP</td><td>{{selected.hp}}</td></tr>\n        <tr><td>SP Attack</td><td>{{selected.sp_atk}}</td></tr>\n        <tr><td>SP Defense</td><td>{{selected.sp_def}}</td></tr>\n        <tr><td>Speed</td><td>{{selected.speed}}</td></tr>\n        <tr><td>Weight</td><td>{{selected.weight}}</td></tr>\n        <tr><td>Total moves</td><td>{{selected.moves.length}}</td></tr>\n    </table>\n</div>",
-			"file": "template/sidebar-wrapper.html",
-			"file_size": 845,
-			"file_write_time": 131043501110000000,
+			"file": "js/js.js",
 			"settings":
 			{
-				"buffer_size": 845,
+				"buffer_size": 3526,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 1494,
 				"line_ending": "Unix"
 			}
 		}
@@ -98,19 +100,19 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "ins",
+		"last_filter": "inst",
 		"selected_items":
 		[
 			[
-				"ins",
+				"inst",
 				"Package Control: Install Package"
 			],
 			[
-				"inst",
+				"ins",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 521.0
+		"width": 497.0
 	},
 	"console":
 	{
@@ -134,11 +136,13 @@
 		"/Users/ESP/Google Диск/Pokedex",
 		"/Users/ESP/Google Диск/Pokedex/css",
 		"/Users/ESP/Google Диск/Pokedex/js",
-		"/Users/ESP/Google Диск/Pokedex/libs",
-		"/Users/ESP/Google Диск/Pokedex/tempLesson"
+		"/Users/ESP/Google Диск/Pokedex/libs"
 	],
 	"file_history":
 	[
+		"/Users/ESP/Google Диск/Pokedex/index.sublime-workspace",
+		"/Users/ESP/Google Диск/Pokedex/template/sidebar-wrapper.html",
+		"/Users/ESP/Google Диск/Pokedex/template/poke-box.html",
 		"/Users/ESP/Google Диск/Pokedex/index.html",
 		"/Users/ESP/Google Диск/Pokedex/js/app.js",
 		"/Users/ESP/Google Диск/Pokedex/css/abilityButtons.css",
@@ -192,8 +196,97 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1286,
+								1286
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 370.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		},
 		{
@@ -201,107 +294,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 0,
-					"file": "template/poke-box.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 484,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								484,
-								484
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
 					"buffer": 1,
-					"file": "template/sidebar-wrapper.html",
+					"file": "js/js.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 845,
+						"buffer_size": 3526,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								845,
-								845
+								2726,
+								2726
 							]
 						],
 						"settings":
@@ -309,11 +315,11 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -324,11 +330,11 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -349,31 +355,118 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1107.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 635.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -407,7 +500,7 @@
 		"cols":
 		[
 			0.0,
-			0.696609636208,
+			0.529464000269,
 			1.0
 		],
 		"rows":
@@ -455,7 +548,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -463,7 +556,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 124.0,
+	"side_bar_width": 202.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
