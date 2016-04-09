@@ -37,14 +37,15 @@ background-image: -webkit-gradient(
 	linear,
 	left top,
 	left bottom,
-	color-stop(0.26, #DE6A17),
-	color-stop(0.91, #F05C21)
+	color-stop(0.13, #FF6A59),
+	color-stop(0.76, #FF4252),
+	color-stop(0.9, #FF4747)
 );
-background-image: -o-linear-gradient(bottom, #DE6A17 26%, #F05C21 91%);
-background-image: -moz-linear-gradient(bottom, #DE6A17 26%, #F05C21 91%);
-background-image: -webkit-linear-gradient(bottom, #DE6A17 26%, #F05C21 91%);
-background-image: -ms-linear-gradient(bottom, #DE6A17 26%, #F05C21 91%);
-background-image: linear-gradient(to bottom, #DE6A17 26%, #F05C21 91%);
+background-image: -o-linear-gradient(bottom, #FF6A59 13%, #FF4252 76%, #FF4747 90%);
+background-image: -moz-linear-gradient(bottom, #FF6A59 13%, #FF4252 76%, #FF4747 90%);
+background-image: -webkit-linear-gradient(bottom, #FF6A59 13%, #FF4252 76%, #FF4747 90%);
+background-image: -ms-linear-gradient(bottom, #FF6A59 13%, #FF4252 76%, #FF4747 90%);
+background-image: linear-gradient(to bottom, #FF6A59 13%, #FF4252 76%, #FF4747 90%);
 border: 1px solid #d03c01;
 }
 .button-box .flying {
