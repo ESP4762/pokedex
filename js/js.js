@@ -98,7 +98,7 @@ function getPokemon(from, count){
 
 
 function addPokemon(pokemon){
-	console.log(pokemon);
+	// console.log(pokemon);
 	var htmlPoc = "<div class=\"col-xs-4\"><div class=\"poke-box " + typesToString (pokemon.types, "_type", " ") + "\" data-id=\"" + pokemon.national_id+"\"> ";
 	htmlPoc += "<center><img src=\"img/blank.png\" alt=\"blank\" height=\"96\" width=\"96\"></center>";
 	htmlPoc += 	"<h3>" + pokemon.name +"</h3>";
