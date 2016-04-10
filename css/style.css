@@ -33,7 +33,8 @@ text-align: center;
 /*---------------------*/
 
 .poke-main {
-	max-height: 640px; 
+	max-height: 630px;
+	margin-bottom: 10px;
 	overflow-y: scroll;
 }
 
@@ -80,7 +81,6 @@ img{
 	font-size: 18px;
 	font-weight: 500;
 	padding: 5px 0;
-	margin-bottom: 10px;
 }
 
 
